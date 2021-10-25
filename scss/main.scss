@@ -130,3 +130,80 @@ img {
 .footer {
   text-align: center;
 }
+
+@media (min-width: 768px) {
+  .menu-toggler {
+    display: none;
+  }
+
+  .header__nav {
+    width: 70%;
+    margin-left: auto;
+  }
+
+  .menu {
+    display: flex;
+    justify-content: flex-end;
+
+    &__item + &__item {
+      margin-left: 0.5em;
+    }
+
+    &__link {
+      border: none;
+      padding-left: 1em;
+      padding-right: 1em;
+      border-radius: 0.4em;
+    }
+  }
+  .logo {
+    width: 30%;
+  }
+
+  .about {
+    &__inner {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      grid-gap: 1em;
+      align-items: center;
+    }
+  }
+
+  .services {
+    &__list {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      grid-gap: 1em;
+    }
+  }
+
+  .blog {
+    &__posts {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      grid-gap: 1em;
+    }
+  }
+}
+
+@media (min-width: 992px) {
+  .container {
+    max-width: 1140px;
+    margin: 0 auto;
+  }
+  .services {
+    &__list {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      grid-gap: 1em;
+    }
+  }
+
+  .blog {
+    &__posts {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      grid-gap: 1em;
+    }
+  }
+}
